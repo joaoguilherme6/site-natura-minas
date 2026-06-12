@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,24 +14,20 @@
     <title>Natura Minas</title>
 </head>
 
-<body>   
+<body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <div class="container-fluid">
 
-            <!-- Logo -->
             <a class="navbar-brand" href="#">
                 <img src="./natura3.png" alt="Logo natura minas" class="logo">
-                
             </a>
 
-            <!-- Botão mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -48,15 +45,25 @@
 
                 </ul>
 
-                <!-- Busca -->
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar produtos">
-                    <button class="btn btn-light">Buscar</button>
+                    <input class="form-control me-2"
+                           type="search"
+                           placeholder="Buscar produtos"
+                           id="busca">
+
+                    <button class="btn btn-light"
+                            id="buscarBtn">
+                        Buscar
+                    </button>
                 </form>
             </div>
 
         </div>
     </nav>
+
+    <!-- BOTÃO MODO ESCURO -->
+    <button id="temaBtn">🌙 Modo Escuro</button>
+
     <div id="inicio">
         <h1>NATURA MINAS</h1>
 
@@ -69,6 +76,7 @@
     <!-- DIV LOGO -->
     <div>
         <h2>Essa é a logo da nossa marca</h2>
+
         <img src="img.imagem.jpg" alt="Logo da Natura Minas">
 
         <p>
@@ -78,7 +86,9 @@
 
     <!-- DIV PRODUTOS -->
     <div id="produtos">
+
         <h2>Alguns dos nossos produtos</h2>
+
         <img src="img.suplementos.jpeg" alt="Produtos naturais">
 
         <ol>
@@ -89,35 +99,41 @@
             <li>Doces naturais</li>
         </ol>
 
-        <!-- TABLE -->
-        <h3>tabela de produtos</h3>
+        <h3>Tabela de Produtos</h3>
+
         <table border="1">
             <tr>
                 <th>Produto</th>
                 <th>Categoria</th>
                 <th>Benefício</th>
             </tr>
+
             <tr>
                 <td>Whey Protein</td>
                 <td>Suplemento</td>
                 <td>Ganho de massa</td>
             </tr>
+
             <tr>
                 <td>Chá Verde</td>
                 <td>Ervas</td>
                 <td>Emagrecimento</td>
             </tr>
+
             <tr>
                 <td>Granola</td>
                 <td>Grãos</td>
                 <td>Energia</td>
             </tr>
         </table>
+
     </div>
 
     <!-- DIV LOJA -->
-    <div id="quem somos">
+    <div id="quem-somos">
+
         <h2>Um pouco do interior da nossa loja</h2>
+
         <hr>
 
         <video controls width="400">
@@ -126,22 +142,71 @@
 
         <p>
             Esse é o interior da nossa loja, com todos os nossos produtos preparados com muito carinho para você.
-        Oferecemos opções naturais selecionadas para garantir sabor, saúde e confiança em cada compra.
-        Venha nos conhecer e descubra uma nova forma de cuidar da sua alimentação.
+            Oferecemos opções naturais selecionadas para garantir sabor, saúde e confiança em cada compra.
+            Venha nos conhecer e descubra uma nova forma de cuidar da sua alimentação.
         </p>
+
     </div>
-    <img src="IMG.DONA.jpeg"DONA DA NOSSA LOJA">
-    <p>Essa é a grande mente por trás da Natura Minas, uma mulher muito batalhadora e guerreira.
+
+    <!-- DONA DA LOJA -->
     <div>
-         <a href="https://www.instagram.com/naturaminasdaterra/" target="_blank">📷 Instagram</a>
-<br>
-<a href="https://www.facebook.com/naturaminasdaterra/" target="_blank">📘 Facebook</a>
-<br>
+
+        <img src="IMG.DONA.jpeg" alt="Dona da nossa loja">
+
+        <p>
+            Essa é a grande mente por trás da Natura Minas, uma mulher muito batalhadora e guerreira.
+        </p>
+
+        <a href="https://www.instagram.com/naturaminasdaterra/" target="_blank">
+            📷 Instagram
+        </a>
+
+        <br><br>
+
+        <a href="https://www.facebook.com/naturaminasdaterra/" target="_blank">
+            📘 Facebook
+        </a>
+
     </div>
 
+    <!-- FORMULÁRIO DE CONTATO -->
+    <div id="contato">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <h2>Entre em Contato</h2>
+
+        <form id="formContato">
+
+            <input type="text"
+                   id="nome"
+                   placeholder="Digite seu nome">
+
+            <br><br>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Digite seu e-mail">
+
+            <br><br>
+
+            <textarea id="mensagem"
+                      placeholder="Digite sua mensagem"
+                      rows="5"
+                      cols="40"></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+
+        </form>
+
+        <p id="mensagemSucesso"></p>
+
+    </div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
+```
